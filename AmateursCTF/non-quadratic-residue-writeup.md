@@ -4,7 +4,7 @@ The program computes a faulty RSA encryption of the flag with only one prime num
 
 ## Solution
 
-To solve the challenge, we first must notice that the public exponent (210) is just 2 * 3 * 5 * 7. This tells us that the ciphertext is at the same time a quadratic, a cubic, a fifth power and seventh power residue. <br>To recover the roots modulo b, we must use a generalized version of Tonelli-Shank's algorithm that is able to find the rth root: such algorithm was presented by Adelman, Manders and Miller in 1977. <br>To get an idea of how the algorithm works please read this article by Scott Charles Lindhurst:<br> http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.144.2770 <br>
+To solve the challenge, we first must notice that the public exponent (210) is just 2 * 3 * 5 * 7. This tells us that the ciphertext is at the same time a quadratic, a cubic, a fifth power and seventh power residue. <br>To recover the roots modulo b, we must use a generalized version of Tonelli-Shank's algorithm that is able to find the rth root: such algorithm was presented by Adelman, Manders and Miller in 1977. <br>To get an idea of how the algorithm works please read this article by Scott Charles Lindhurst (Especially Chapter 3):<br> http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.144.2770 <br>
 ## Implementation
 
 rth root finder for r prime: 
