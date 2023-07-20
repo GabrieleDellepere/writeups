@@ -39,9 +39,7 @@ def modular_roots(a: int, p: int, r: int) -> list[int] | None:
 			m = i
 			break
 	
-	if m == 0:
-		print("something weird happened (1)")
-		return
+	assert m != 0
 
 	# find non-residue
 	u = 2
@@ -69,9 +67,7 @@ def modular_roots(a: int, p: int, r: int) -> list[int] | None:
 				m = i
 				break
 		
-		if m == 0:
-			print("something weird happened (2)")
-			return
+		assert m != 0
 		
 		t = pow(z, pow(r, k - m - 1, p-1), p)
 		z = pow(t, r, p)
@@ -88,9 +84,7 @@ def modular_roots(a: int, p: int, r: int) -> list[int] | None:
 				l = i
 				break
 		
-		if l == 0:
-			print("something weird happened (3)")
-			return
+		assert l != 0
 		
 		b = (b * pow(z, l, p)) % p
 		x = (x * pow(t, l, p)) % p
