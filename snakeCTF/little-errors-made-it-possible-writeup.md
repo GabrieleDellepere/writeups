@@ -1,6 +1,6 @@
 ## Scenario
 
-We know the flag has been encoded into 5 integers, which form the secret vector s in the operation: $b = {(As + e)} \mod{p}$ <br>
+We know the flag has been encoded into 5 integers, which form the secret vector s in the operation: $b = {(As + e)}\mod{p}$ <br>
 where p is prime, e is the errors vector of size n (50), A is a n x m (50 x 5) matrix and b is a vector of size n (50).
 ## Main Idea
 
