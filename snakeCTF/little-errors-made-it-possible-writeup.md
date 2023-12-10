@@ -91,3 +91,4 @@ for x in s:
 
 ## Full Code
 
+https://github.com/GabrieleDellepere/writeups/blob/main/snakeCTF/little-errors-made-it-possible.py
