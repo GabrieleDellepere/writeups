@@ -54,7 +54,7 @@ At this point, we need to realize that the error_bound given in the data.txt is 
 - $b = ([A|e][s,1]) \mod{p}$ 
 
 That formula can be interpreted as following: "the result b is a linear combination with integer coefficients of the vectors forming A and the vector e (modulo p)". This sentence should ring a bell -> If we can build the <b>lattice</b> corresponding to this linear space, we can apply lattice reduction to minimize the basis and get the shortest possible vector for E.
-(if you are not familiar with lattices, I suggest looking at the guided problems on cryptohack: https://cryptohack.org/challenges/maths/)
+(if you are not familiar with lattices, I suggest looking at the guided problems on cryptohack: https://cryptohack.org/challenges/maths/).<br>
 Luckily for us, building such lattice is not too difficult, we just need the vectors in A, our potential solution E and to remember that in every dimension we can freely move by $kp$ thanks to the modulus. Hence, the set of vectors missing to complete the lattice basis is just the canonical basis element-wise multiplied by $p$.
 
 ```python
