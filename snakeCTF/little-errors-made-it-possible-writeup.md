@@ -1,7 +1,7 @@
 ## Scenario
 
 We know the flag has been encoded into 5 integers, which form the secret vector s in the operation: $b = {(As + e)}\mod{p}$ <br>
-where p is prime, e is the errors vector of size n (50), A is a n x m (50 x 5) matrix and b is a vector of size n (50).
+where p is prime, e is the errors vector of size 50, A is a 50x5 matrix and b is a vector of size 50.
 ## Main Idea
 
 To solve the challenge, we're gonna use the fact that we can rewrite such operation in two ways:
