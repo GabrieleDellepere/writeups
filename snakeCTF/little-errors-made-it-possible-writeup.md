@@ -49,7 +49,7 @@ X = gaussian_solve_mod_p(Ab, p)
 ```
 
 Once we've found one potential solution X, we can split it into S = X[:5] and E = X[5:], which is one potential solution for s and e.
-At this point, we need to realize that the error_bound given in the data.txt is several order of magnitudes smaller than the average value we find in E -> From this we can infere that the correct errors vector is probably the one with minimal length. How to achieve this? We need to go back and remember the first alternative representation of the formula. 
+At this point, we need to realize that the error_bound given in the data.txt is several order of magnitudes smaller than the average value we find in E -> From this we can infere that the correct errors vector is probably the one with minimal length. How to get it? We need to go back and remember the first alternative representation of the formula. 
 
 - $b = ([A|e][s,1]) \mod{p}$ 
 
